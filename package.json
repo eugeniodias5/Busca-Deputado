@@ -1,0 +1,20 @@
+{
+  "name": "busca-deputado",
+  "version": "1.0.0",
+  "description": "Aplicação para buscar dados orçamentários de deputados federais",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js"
+  },
+  "bin": "main.js",
+  "author": "Eugenio Ribeiro",
+  "license": "ISC",
+  "dependencies": {
+    "create-object-url": "^1.0.2",
+    "global": "^4.4.0",
+    "node-fetch": "^2.6.1",
+    "prompts": "^2.4.0",
+    "round-to": "^5.0.0",
+    "terminal-image": "^1.2.1"
+  }
+}
