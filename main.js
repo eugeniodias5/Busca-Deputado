@@ -6,7 +6,7 @@ const { escolheOpcao } =  require('./Controllers/PromptController');
 const { funcoes } = require('./Models/PromptModel');
 
 (async function (){
-       
+    try{   
         while(1){
             const funcao = (await escolheOpcao("Escolha uma operação", funcoes));
 
@@ -64,5 +64,8 @@ const { funcoes } = require('./Models/PromptModel');
             else
                 break;
         }
-    
+    }
+    catch(e){
+        console.log("Um erro inesperado aconteceu!");
+    }
 })()
